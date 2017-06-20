@@ -82,6 +82,9 @@ subscriber.on('message', function(channel, message) {
         content: {
           email_rfc822: message
         },
+        options: {
+          ip_pool: '600'
+        },
         recipients: [{address: {email: process.env.FORWARD_TO}}],
         return_path: process.env.RETURN_PATH,
         metadata: {
