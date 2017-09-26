@@ -144,7 +144,7 @@ app.get('/webhook', function(request, response) {
  * be. Then set that up in SparkPost.
  */
 
-app.post('/webhook', function(request, response) {
+/*app.post('/webhook', function(request, response) {
   let appUrl = 'https://' + request.hostname + '/message';
   addWebhook(appUrl)
     .then(function() {
@@ -153,7 +153,7 @@ app.post('/webhook', function(request, response) {
     .fail(function(msg) {
       return response.status(500).json({error: msg});
     });
-});
+});*/
 
 /*
  * POST /message -- this is the webhook endpoint. Messages received from
